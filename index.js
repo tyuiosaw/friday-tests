@@ -3,9 +3,9 @@ const containsChar = (str, char) => {
     return str.includes(char);
 }
 
-//console.log(containsChar('hello', 'e'));
-//console.log(containsChar('world', 'z'));
-//console.log(containsChar('Hello', 'h'))
+console.log(containsChar('hello', 'e'));
+console.log(containsChar('world', 'z'));
+console.log(containsChar('Hello', 'h'))
 
 //2
 const reverse = (str) => {
@@ -16,24 +16,23 @@ const reverse = (str) => {
   return result;
 }
 
-//console.log(reverse('listen'))
-//console.log(reverse('hello'))
+console.log(reverse('listen'))
+console.log(reverse('hello'))
 
 //3
 const wordsToRegister = (str) => {
   let result = '';
   for (let i = 0; i < str.length; i++) {
     if (i % 2 === 0) {
-      result += str[i].toUpperCase();
-    } else {
       result += str[i].toLowerCase();
-    }
+    } else {
+      result += str[i].toUpperCase();
   }
   return result;
 }
 
-//console.log(wordsToRegister('hello'));
-//console.log(wordsToRegister('test test'))
+console.log(wordsToRegister('hello'));s
+console.log(wordsToRegister('test test'))
 
 //4
 const sumOfDigitsInString = (str) => {
@@ -46,8 +45,8 @@ const sumOfDigitsInString = (str) => {
   return sum;
 }
 
-//console.log(sumOfDigitsInString('abc123'));
-//console.log(sumOfDigitsInString('5 apples and 3 oranges'))
+console.log(sumOfDigitsInString('abc123'));
+console.log(sumOfDigitsInString('5 apples and 3 oranges'))
 
 //5
 const checkChars = (str, text, reversed) => {
@@ -58,6 +57,6 @@ const checkChars = (str, text, reversed) => {
   return str.replaceAll(text, reversed);
 }
 
-//console.log(checkChars('Test!', '!', '?'));
-//console.log(checkChars('Hello world', 'a', 'b')); 
-//console.log(checkChars('hexlet', 'e', 'o'))
+console.log(checkChars('Test!', '!', '?'));
+console.log(checkChars('Hello world', 'a', 'b')); 
+console.log(checkChars('hexlet', 'e', 'o'))
