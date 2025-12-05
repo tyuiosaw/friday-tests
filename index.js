@@ -5,7 +5,7 @@ const containsChar = (str, char) => {
 
 console.log(containsChar('hello', 'e'));
 console.log(containsChar('world', 'z'));
-console.log(containsChar('Hello', 'h'))
+console.log(containsChar('Hello', 'h'));
 
 //2
 const reverse = (str) => {
@@ -27,12 +27,12 @@ const wordsToRegister = (str) => {
       result += str[i].toLowerCase();
     } else {
       result += str[i].toUpperCase();
-  }
+  }}
   return result;
 }
 
-console.log(wordsToRegister('hello'));s
-console.log(wordsToRegister('test test'))
+console.log(wordsToRegister('hello'));
+console.log(wordsToRegister('test test'));
 
 //4
 const sumOfDigitsInString = (str) => {
@@ -59,4 +59,4 @@ const checkChars = (str, text, reversed) => {
 
 console.log(checkChars('Test!', '!', '?'));
 console.log(checkChars('Hello world', 'a', 'b')); 
-console.log(checkChars('hexlet', 'e', 'o'))
+console.log(checkChars('hexlet', 'e', 'o'));
